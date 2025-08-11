@@ -145,6 +145,7 @@ body::before {
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
+     margin-top: 20px;
 }
 
 .hero-title {
@@ -152,6 +153,7 @@ body::before {
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 30px;
+     margin-top: 30px;
 }
 
 .title-accent {
