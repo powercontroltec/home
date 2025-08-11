@@ -129,9 +129,17 @@ body::before {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 120px 20px 60px;
+    padding: 140px 20px 60px;
     position: relative;
+
 }
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 120px 20px 40px;
+    }
+}
+
 
 .hero-container {
     max-width: 1000px;
