@@ -123,7 +123,7 @@ body::before {
 
 /* Hero Section */
 .hero {
-    padding-top: 140px; /* Altura real da navbar + espaço de respiro */
+    padding-top: 110px; /* ou ajuste conforme necessário */
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 60px;
@@ -134,9 +134,9 @@ body::before {
     align-items: center;
     text-align: center;
     position: relative;
-    scroll-margin-top: 140px; /* Evita ocultar com links âncora */
-
+    scroll-margin-top: 110px;
 }
+
 
 
 
@@ -152,7 +152,7 @@ body::before {
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
-     margin-top: 40px;
+
 }
 
 .hero-title {
@@ -160,7 +160,7 @@ body::before {
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 30px;
-     margin-top: 50px;
+
 }
 
 .title-accent {
