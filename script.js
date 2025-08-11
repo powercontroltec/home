@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (href === '#whatsapp') {
                 e.preventDefault();
                 const message = encodeURIComponent('Olá! Gostaria de um diagnóstico gratuito para meu controle.');
-                const whatsappUrl = `https://wa.me/5511999999999?text=${message}`;
+                const whatsappUrl = `https://wa.me/5511992174900?text=${message}`;
                 window.open(whatsappUrl, '_blank');
                 return;
             }
