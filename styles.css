@@ -123,27 +123,29 @@ body::before {
 
 /* Hero Section */
 .hero {
-    padding-top: 110px; /* ou ajuste conforme necessário */
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 60px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    scroll-margin-top: 110px;
+    padding-top: 60px; /* espaço para não colar no topo */
+    padding-bottom: 0;
+    overflow: hidden;
 }
-
-
-
 
 .hero-container {
-    max-width: 1000px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 800px;
     margin: 0 auto;
 }
+
 
 .hero-subtitle {
     color: #00ff88;
@@ -215,7 +217,7 @@ body::before {
 
 /* Clients Section */
 .clients-section {
-    margin-top: 80px;
+    margin-top: 40px;
     text-align: center;
 }
 
