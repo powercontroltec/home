@@ -122,12 +122,12 @@ body::before {
 }
 
 /* Hero Section */
- .hero {
+.hero {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 100px; /* Aumentado de 60px para 100px */
+    padding-top: 140px; /* Aumentado para evitar sobreposição com navbar fixa */
     padding-bottom: 0;
     overflow: hidden;
 }
