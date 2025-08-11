@@ -127,7 +127,7 @@ body::before {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 60px; /* espaço para não colar no topo */
+    padding-top: 100px; /* Aumentado de 60px para 100px */
     padding-bottom: 0;
     overflow: hidden;
 }
