@@ -137,11 +137,7 @@ body::before {
     scroll-margin-top: 140px; /* Evita ocultar com links âncora */
 
 }
-@media (max-width: 768px) {
-    .hero {
-        padding: 120px 20px 40px;
-    }
-}
+
 
 
 .hero-container {
