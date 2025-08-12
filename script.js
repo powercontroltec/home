@@ -154,7 +154,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize typing effect
     // addTypingEffect();
 });
-
 // Service Worker for PWA (optional)
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
