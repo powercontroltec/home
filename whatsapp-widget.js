@@ -5,7 +5,7 @@
 
 class WhatsAppWidget {
     constructor(options = {}) {
-        this.phoneNumber = options.phoneNumber || '5511999999999';
+        this.phoneNumber = options.phoneNumber || '5511992174900';
         this.name = options.name || 'Atendimento';
         this.status = options.status || 'Online agora';
         this.avatar = options.avatar || 'A';
@@ -151,7 +151,7 @@ let whatsappWidget;
 document.addEventListener('DOMContentLoaded', function() {
     // Configuração padrão - pode ser personalizada
     const config = {
-        phoneNumber: '5511999999999', // Substitua pelo seu número
+        phoneNumber: '5511992174900', // Substitua pelo seu número
         name: 'Atendimento',
         status: 'Online agora',
         avatar: 'A',
