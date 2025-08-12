@@ -17,12 +17,12 @@ class WhatsAppWidget {
             {
                 text: 'Quero saber mais',
                 message: 'Quero saber mais sobre os serviços',
-                icon: this.getWhatsAppIcon()
+                icon: "whatsapp"
             },
             {
                 text: 'Preciso de ajuda',
                 message: 'Preciso de ajuda com minha conta',
-                icon: this.getHelpIcon()
+                icon: "help"
             }
         ];
         
@@ -67,8 +67,8 @@ class WhatsAppWidget {
                     <div class="quick-actions">
                         ${this.quickButtons.map(button => `
                             <button class="quick-button" onclick="whatsappWidget.sendToWhatsApp('${button.message}')">
-                                ${button.icon}
-                                ${button.text}
+                                ${this.getWhatsAppIcon()}
+                                ${this.getWhatsAppIcon()}
                             </button>
                         `).join('')}
                     </div>
@@ -178,4 +178,3 @@ document.addEventListener('DOMContentLoaded', function() {
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = WhatsAppWidget;
 }
-
