@@ -16,12 +16,12 @@ class WhatsAppWidget {
             {
                 text: 'Quero saber mais',
                 message: 'Quero saber mais sobre os serviços',
-                icon: "whatsapp"
+               
             },
             {
                 text: 'Preciso de ajuda',
                 message: 'Preciso de ajuda com minha conta',
-                icon: "help"
+                
             }
         ];
         
