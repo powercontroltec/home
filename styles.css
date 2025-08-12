@@ -25,7 +25,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-      background: url('https://powercontroltec.github.io/home/bg%20playstation.png') repeat;
+      background: url('https://powercontroltec.github.io/home/bg_playstation.png') repeat;
     background-size: auto; /* mantém tamanho original da imagem */
         pointer-events: none;
     z-index: -1;
