@@ -2,7 +2,6 @@
  * WhatsApp Chat Widget
  * Widget de chat do WhatsApp para sites
  */
-
 class WhatsAppWidget {
     constructor(options = {}) {
         this.phoneNumber = options.phoneNumber || '5511992174900';
