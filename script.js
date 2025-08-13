@@ -173,3 +173,11 @@ window.addEventListener('load', function() {
     console.log(`Page loaded in ${loadTime.toFixed(2)}ms`);
 });
 
+
+// FAQ
+document.querySelectorAll(".faq-question").forEach(btn => {
+  btn.addEventListener("click", function() {
+    this.parentElement.classList.toggle("active");
+  });
+});
+
