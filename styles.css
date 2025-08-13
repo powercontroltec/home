@@ -485,6 +485,28 @@ body::before {
     transform: translateX(5px);
 }
 
+/* FAQ*/
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 12px;
+  font-size: 16px;
+  background: #f3f3f3;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.faq-item.active .faq-answer {
+  max-height: 500px; /* mantém texto no DOM para SEO */
+}
+
+
 /* Footer */
 .footer {
     background: rgba(0, 0, 0, 0.8);
