@@ -492,21 +492,28 @@ body::before {
   text-align: left;
   padding: 12px;
   font-size: 16px;
-  background: #f3f3f3;
+  background: transparent; /* fundo transparente */
   border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* borda leve, opcional */
   cursor: pointer;
   font-weight: bold;
+  color: inherit; /* mantém a cor do texto do site */
 }
+
 .faq-answer {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
 }
+
 .faq-item.active .faq-answer {
-  max-height: 500px; /* mantém texto no DOM para SEO */
+  max-height: 500px; /* mantém conteúdo visível no DOM para SEO */
 }
 
-
+.faq-answer p {
+  margin: 8px 0;
+  background: transparent; /* garante que o texto também não tenha fundo */
+}
 /* Footer */
 .footer {
     background: rgba(0, 0, 0, 0.8);
