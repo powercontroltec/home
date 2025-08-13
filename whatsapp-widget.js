@@ -2,9 +2,10 @@
  * WhatsApp Chat Widget
  * Widget de chat do WhatsApp para sites
  */
+
 class WhatsAppWidget {
     constructor(options = {}) {
-        this.phoneNumber = options.phoneNumber || '5511992174900';
+        this.phoneNumber = options.phoneNumber || '5511999999999';
         this.name = options.name || 'Atendimento';
         this.status = options.status || 'Online agora';
         this.avatar = options.avatar || 'A';
@@ -16,12 +17,12 @@ class WhatsAppWidget {
             {
                 text: 'Quero saber mais',
                 message: 'Quero saber mais sobre os serviços',
-               
+                icon: "whatsapp"
             },
             {
                 text: 'Preciso de ajuda',
                 message: 'Preciso de ajuda com minha conta',
-                
+                icon: "help"
             }
         ];
         
@@ -66,8 +67,7 @@ class WhatsAppWidget {
                     <div class="quick-actions">
                         ${this.quickButtons.map(button => `
                             <button class="quick-button" onclick="whatsappWidget.sendToWhatsApp('${button.message}')">
-                                ${this.getWhatsAppIcon()}
-                                ${this.getWhatsAppIcon()}
+                                ${button.icon === 'whatsapp' ? this.getWhatsAppIcon() : this.getHelpIcon()}
                             </button>
                         `).join('')}
                     </div>
@@ -79,7 +79,7 @@ class WhatsAppWidget {
             
             <!-- Botão do WhatsApp -->
             <button class="whatsapp-button" onclick="whatsappWidget.toggleChat()">
-                ${this.getWhatsAppIcon()}
+                                ${button.icon === 'whatsapp' ? this.getWhatsAppIcon() : this.getHelpIcon()}
             </button>
         `;
     }
@@ -150,7 +150,7 @@ let whatsappWidget;
 document.addEventListener('DOMContentLoaded', function() {
     // Configuração padrão - pode ser personalizada
     const config = {
-        phoneNumber: '5511992174900', // Substitua pelo seu número
+        phoneNumber: '5511999999999', // Substitua pelo seu número
         name: 'Atendimento',
         status: 'Online agora',
         avatar: 'A',
@@ -177,3 +177,6 @@ document.addEventListener('DOMContentLoaded', function() {
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = WhatsAppWidget;
 }
+
+
+
