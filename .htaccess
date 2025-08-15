@@ -1,2 +1,0 @@
-RewriteEngine On
-RewriteRule ^(.*)$ https://powercontroltec.com.br/$1 [R=301,L]
